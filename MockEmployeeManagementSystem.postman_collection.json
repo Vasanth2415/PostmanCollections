@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "1a589bcc-a94a-4fd9-bb4b-9f232272c285",
+		"name": "MockEmployeeManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29784249"
+	},
+	"item": [
+		{
+			"name": "MockGetAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://a266156e-ac37-464e-a903-3a05cd77eff5.mock.pstmn.io/employees",
+					"protocol": "https",
+					"host": [
+						"a266156e-ac37-464e-a903-3a05cd77eff5",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "MockGetAllEmployeesExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a266156e-ac37-464e-a903-3a05cd77eff5.mock.pstmn.io/employees",
+							"protocol": "https",
+							"host": [
+								"a266156e-ac37-464e-a903-3a05cd77eff5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 21 Jan 2025 07:05:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=97858ebfcc05c271"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=6afd44a471dba94d"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1737443168"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "[\n{\n\"firstName\": \"{{$randomFirstName}}\",\n\"lastName\": \"{{$randomLastName}}\",\n\"email\" :\"{{$randomEmail}}\",\n\"id\" : {{$randomUUID}}\n},\n\n{\n\"firstName\": \"{{$randomFirstName}}\",\n\"lastName\": \"{{$randomLastName}}\",\n\"email\" :\"{{$randomEmail}}\",\n\"id\" : {{$randomUUID}}\n}\n]"
+				}
+			]
+		},
+		{
+			"name": "CreateMockEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://a266156e-ac37-464e-a903-3a05cd77eff5.mock.pstmn.io/employees",
+					"protocol": "https",
+					"host": [
+						"a266156e-ac37-464e-a903-3a05cd77eff5",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateMockEmployeeExample",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://a266156e-ac37-464e-a903-3a05cd77eff5.mock.pstmn.io/employees",
+							"protocol": "https",
+							"host": [
+								"a266156e-ac37-464e-a903-3a05cd77eff5",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 21 Jan 2025 07:18:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=0846ec485b128039"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=51dd46d1abad8ba1"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1737443941"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n\"firstName\": \"{{$randomFirstName}}\",\n\"lastName\": \"{{$randomLastName}}\",\n\"email\" :\"{{$randomEmail}}\",\n\"id\" : {{$randomUUID}}\n}"
+				}
+			]
+		}
+	]
+}
