@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "edadd274-e1b2-40f1-b2e7-5c754b824111",
+		"name": "NewmanRunCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29784249"
+	},
+	"item": [
+		{
+			"name": "NewmanCollectionFolder",
+			"item": [
+				{
+					"name": "NewmanDataFromCSV",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " { \r\n    \"id\": {{id}},\r\n    \"name\": \"{{name}}\",\r\n    \"role\": \"{{role}}\",\r\n    \"age\": {{age}}\r\n    \r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
